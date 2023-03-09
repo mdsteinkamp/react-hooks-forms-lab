@@ -6,10 +6,13 @@ import itemData from "../data/items";
 function App() {
   const [items, setItems] = useState(itemData);
   const [isDarkMode, setIsDarkMode] = useState(false);
+  // const [array, setArray] = useState(items)
 
   function handleDarkModeClick() {
     setIsDarkMode((isDarkMode) => !isDarkMode);
   }
+
+
 
   return (
     <div className={"App " + (isDarkMode ? "dark" : "light")}>
